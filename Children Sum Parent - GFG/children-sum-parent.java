@@ -124,10 +124,7 @@ class Tree
     
     public static boolean f(Node root)
     {
-        if(root == null){
-            return true;
-        }
-        if(root.left == null && root.right == null){
+        if(root == null || root.left == null && root.right == null){
             return true;
         }
         int leftV = 0;
